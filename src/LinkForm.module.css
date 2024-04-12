@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--foreground);
+  display: flex;
+  padding: 0.5rem 1rem;
+  max-width: 40rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.input {
+  font-size: 1rem;
+  all: unset;
+  padding: 0.25rem;
+  color: var(--chat-text-color);
+  width: 90%;
+}
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  width: 5%;
+}

@@ -1,0 +1,40 @@
+.container {
+  /* background-color: var(--foreground); */
+  font-size: 0.9rem;
+  max-width: 40rem;
+  margin: 1rem auto;
+  color: var(--chat-text-color);
+  /* border: 1px solid white; */
+  display: flex;
+  gap: 1rem;
+}
+
+.summary {
+  position: relative;
+  background-color: var(--foreground);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  line-height: 1.5rem;
+}
+
+.bot_icon {
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 2px solid white;
+  border-top-color: var(--blue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  animation: rotation 750ms ease infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

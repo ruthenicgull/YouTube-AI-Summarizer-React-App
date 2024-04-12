@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  color: var(--chat-text-color);
+}
+
+.container {
+  background-color: var(--background);
+  padding: 0.5rem 1rem;
+  max-width: 40rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  color: white;
+}
+
+.title {
+  background: linear-gradient(to right, #4b84f1, #d36679);
+  background-clip: text;
+  color: transparent;
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem;
+}
+
+.error_message {
+  font-size: 0.75rem;
+  padding: 1rem;
+  color: gray;
+}
+
+.regenerate_option {
+  all: unset;
+  display: block;
+  background-color: var(--blue);
+  margin: 1rem 0;
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--background);
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
