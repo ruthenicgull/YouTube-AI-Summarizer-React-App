@@ -11,7 +11,8 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const [showSummary, setShowSummary] = useState(false);
 
-  const url = "http://127.0.0.1:5000/api/summary";
+  const url =
+    "https://youtube-ai-summarizer-flask-server.onrender.com/api/summary";
 
   function inputChangeHandler(event) {
     setLink(event.target.value);
@@ -23,7 +24,6 @@ function App() {
       setSummary(response.data.summary);
       setIsLoading(false);
     } catch (error) {
-      // console.log("error:", error);
       setErrorMessage(error);
     }
   }
