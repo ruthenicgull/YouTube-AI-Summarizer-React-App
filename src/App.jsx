@@ -1,6 +1,6 @@
 import styles from "./App.module.css";
 import LinkForm from "./LinkForm";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Summary from "./Summary";
 
@@ -11,8 +11,7 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const [showSummary, setShowSummary] = useState(false);
 
-  const url =
-    "https://youtube-ai-summarizer-flask-server.onrender.com/api/summary";
+  const url = import.meta.env.VITE_API_ENDPOINT;
 
   function inputChangeHandler(event) {
     setLink(event.target.value);
